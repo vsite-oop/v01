@@ -8,6 +8,7 @@ namespace vsite::oop::v1
 /*
 * function implementations
 */
+
 	std::string to_hex(int n) {
 		return std::format("{:X}", n);
 	}
@@ -17,7 +18,7 @@ namespace vsite::oop::v1
 	}
 
 	/*
-		Ovo je moj neki tezi nacin bez formata...
+		Another way I came up with without format()...
 		
 		std::string to_hex(int n) {
 		char hex_string[20];
@@ -28,20 +29,20 @@ namespace vsite::oop::v1
 
 
 	void mult_table(int n, std::stringstream& ss) {
-		if (n <= 0 || n > 20) {  // tablica radi samo za brojeve od 0 do 20
+		if (n <= 0 || n > 20) {  // table works only for numbers from 0 to 20
 			ss << "";
 		}
 		else {
-			ss << 0;  // ispis prvog reda u tablici
+			ss << 0;  // writing first table row
 			for (int i = 1; i < n; i++)
 				ss << std::format("{:4}", i);
 			ss << std::format("{:4}", n) << "\n";
 
 			for (int i = 1; i <= n; i++) {
-				ss << i; // u svakom redu prvo ispisi i,...
-				for (int j = 1; j < n; j++)  // ...a dalje je mnozenje i * j...
+				ss << i; // in each row first write "i",...
+				for (int j = 1; j < n; j++)  // ...else is multiplication i * j...
 					ss << std::format("{:4}", i * j);
-				ss << std::format("{:4}", i * n) << "\n";  // ...s tim da na zadnjem (j==n) još i predjem u novi red
+				ss << std::format("{:4}", i * n) << "\n";  // ...additionally, in the last one (j==n) move to the next row.
 			}
 		}
 	}
