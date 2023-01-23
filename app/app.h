@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include <iostream>
+#include <ostream>  // ostream
 
 namespace vsite::oop::v1
 {
@@ -12,5 +12,5 @@ namespace vsite::oop::v1
 
 	std::string to_exp(double n);
 
-	void mult_table(int n, std::stringstream& ss);
+	void mult_table(int n, std::ostream& ss);
 }

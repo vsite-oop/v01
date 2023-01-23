@@ -1,6 +1,6 @@
 #include "app.h"
 #include <format>
-#include <sstream>
+#include <ostream>
 
 
 namespace vsite::oop::v1
@@ -21,14 +21,14 @@ namespace vsite::oop::v1
 		Another way I came up with without format()...
 		
 		std::string to_hex(int n) {
-		char hex_string[20];
-		sprintf_s(hex_string, "%X", n);
-		return hex_string;
+			char hex_string[20];
+			sprintf_s(hex_string, "%X", n);
+			return hex_string;
 	}
 	*/
 
 
-	void mult_table(int n, std::stringstream& ss) {
+	void mult_table(int n, std::ostream& ss) {
 		if (n <= 0 || n > 20) {  // Table works only for numbers from 0 to 20
 			ss << "";
 		}
