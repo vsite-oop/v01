@@ -10,7 +10,7 @@
 // write multiplication table up to this number to std::cout (using vsite::oop::v1::mult_table)
 
 
-void my_function_v01(double n) {
+void my_function_v01(int n) {
 	std::cout << "Hexadecimalna vrijednost:\n";
 	std::cout << std::format ("{}{}",vsite::oop::v1::to_hex(n), "\n");
 
@@ -20,7 +20,7 @@ void my_function_v01(double n) {
 
 
 int main(){
-	double n;
+	int n;
 	std::cout << "Unesite cijeli broj:\n";
 	std::cin >> n;
 

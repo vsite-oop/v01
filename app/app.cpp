@@ -30,7 +30,7 @@ namespace vsite::oop::v1
 
 	void mult_table(int n, std::ostream& ss) {
 		if (n <= 0 || n > 20) {  // Table works only for numbers from 0 to 20
-			ss << "";
+			return;  // same as: ss << ""  (write nothing);
 		}
 		else {
 			ss << 0;  // Writing first table row
