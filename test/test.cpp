@@ -43,7 +43,7 @@ public:
 		{
 			std::stringstream ss;
 			mult_table(1, ss);
-			Assert::AreEqual("0   1\n1   1\n", ss.str().c_str());
+				Assert::AreEqual("0   1\n1   1\n", ss.str().c_str());
 		}
 		{
 			std::stringstream ss;
