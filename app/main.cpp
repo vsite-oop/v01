@@ -9,11 +9,12 @@ using namespace vsite::oop::v1;
 
 int main()
 {
-    int n = 12;
-    std::cout << std::format("Broj {} u hexadecimalnom obliku: {}\n", n, to_hex(n));
+    int n;
+    std::cout << "Unesite broj: ";
+    std::cin >> n;
+    std::cout << "\n";
+    std::cout << std::format("Broj {} u hexadecimalnom obliku: {}\n\n", n, to_hex(n));
     std::cout << std::format("Tablica mnozenja za broj {}:\n", n);
 
-    std::stringstream ss;
-    mult_table(n, ss);
-    std::cout << ss.str().c_str();
+    mult_table(n, std::cout);
 }

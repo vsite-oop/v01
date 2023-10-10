@@ -1,6 +1,7 @@
 #include "app.h"
 #include <format>
 #include <sstream>
+#include <iomanip>
 
 namespace vsite::oop::v1
 {
@@ -15,7 +16,7 @@ namespace vsite::oop::v1
         return std::format("{:.2e}", num);
     }
 
-    void mult_table(int n, std::stringstream& ss) {
+    void mult_table(int n, std::ostream& ss) {
         if (n == 0 || n > 20) {
             return;
         }
@@ -31,11 +32,7 @@ namespace vsite::oop::v1
                 else {
                     int m = i > 0 ? i : 1;
                     std::string digit = std::to_string(j*m);
-                    int digitCount = 4 - digit.length();
-                    for (int i = 0; i < digitCount; i++) {
-                        ss << " ";
-                    }
-                    ss << digit;
+                    ss << std::setw(4) << digit;
                 }                
             }
             ss << "\n";
