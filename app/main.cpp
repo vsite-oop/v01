@@ -17,9 +17,7 @@ int main() {
 	cin >> n;
 	cout << vsite::oop::v1::to_hex(n);
 	cout << vsite::oop::v1::to_exp(n);
-	std::stringstream os;
-	vsite::oop::v1::mult_table(n,os);
-
+	vsite::oop::v1::mult_table(n, std::cout);
 
 	return 0;
 }
