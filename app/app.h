@@ -4,9 +4,7 @@
 
 namespace vsite::oop::v1
 {
-/*
-* function declarations
-*/
-
-
+        std::string to_hex(int broj);
+        std::string to_exp(double broj);
+        void mult_table(int n, std::ostream& output);
 }
