@@ -8,6 +8,7 @@ using namespace vsite::oop::v1;
 // write multiplication table up to this number to std::cout (using vsite::oop::v1::mult_table)
 
 int main() {
+	//glavni program
 	int number;
 	std::cout << "Upisi jedan cijeli broj: ";
 	std::cin >> number;

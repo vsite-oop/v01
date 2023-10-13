@@ -5,6 +5,7 @@
 
 namespace vsite::oop::v1
 {
+	//funkcije
 /*
 * function implementations
 */

@@ -4,6 +4,7 @@
 
 namespace vsite::oop::v1
 {
+	//header definicija
 /*
 * function declarations
 */
