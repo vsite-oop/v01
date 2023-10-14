@@ -4,9 +4,8 @@
 
 namespace vsite::oop::v1
 {
-/*
-* function declarations
-*/
-
+	std::string to_hex(int x);
+	std::string to_exp(double x);
+	void mult_table(int x, std::ostream& ss);
 
 }
