@@ -1,9 +1,18 @@
-#include "app.h"
-
-// input one integer
-// write its hex representation to std::cout (using vsite::oop::v1::to_hex)
-// write multiplication table up to this number to std::cout (using vsite::oop::v1::mult_table)
+#include "app.h" 
 
 int main()
 {
+    int num;
+
+    
+    std::cout << "Unesite broj: ";
+    std::cin >> num;
+
+    std::string hexRepresentation = vsite::oop::v1::to_hex(num);
+    std::cout << "Hexadecimalna reprezentacija: " << hexRepresentation << std::endl;
+
+    std::cout << "Multiplication Table do broja: " << num << ":\n";
+    vsite::oop::v1::mult_table(num);
+
+    return 0;
 }
