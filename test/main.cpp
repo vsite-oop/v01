@@ -14,5 +14,6 @@ int main()
     std::cout << std::format("Tablica mnozenja za broj {}:\n", broj);
 
     mult_table(broj, std::cout);
+
     return 0;
 }
