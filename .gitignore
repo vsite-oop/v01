@@ -49,3 +49,4 @@
 *.iobj
 *.ipdb
 /.vs
+/test/main.cpp
