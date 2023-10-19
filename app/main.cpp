@@ -7,8 +7,11 @@ int main()
 {
 	int x;
 	std::cin >> x;
-	std::string to_hex(int n);
-	std::string to_exp(double n);
-	void mult_table(int a, std::ostream & ss);
-
+	double y;
+	std::cin >> y;
+	std::stringstream ss;
+	std::cout<<vsite::oop::v1::to_hex(x)<<"\n";
+	std::cout << vsite::oop::v1::to_exp(y) <<std::endl;
+	vsite::oop::v1::mult_table(x,ss);
+	std::cout << ss.str();
 }
