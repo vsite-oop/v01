@@ -9,9 +9,7 @@ int main()
 	std::cin >> x;
 	double y;
 	std::cin >> y;
-	std::stringstream ss;
 	std::cout<<vsite::oop::v1::to_hex(x)<<"\n";
 	std::cout << vsite::oop::v1::to_exp(y) <<std::endl;
-	vsite::oop::v1::mult_table(x,ss);
-	std::cout << ss.str();
+	vsite::oop::v1::mult_table(x,std::cout);
 }
